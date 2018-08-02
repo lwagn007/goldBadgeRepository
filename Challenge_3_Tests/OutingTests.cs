@@ -50,10 +50,10 @@ namespace Challenge_3_Tests
         {
             //-- Arrange
             Outing initialOuting = new Outing(OutingType.BeerGarden, new DateTime(2018, 04, 15), 15m, 200);
-            Outing initialOutingTwo = new Outing(OutingType.Bowling, new DateTime(2018, 02, 15), 45m, 200);
-            Outing initialOutingThree = new Outing(OutingType.Golf, new DateTime(2018, 06, 15), 250m, 200);
+            Outing initialOutingTwo = new Outing(OutingType.BowlingEvent, new DateTime(2018, 02, 15), 45m, 200);
+            Outing initialOutingThree = new Outing(OutingType.GolfEvent, new DateTime(2018, 06, 15), 250m, 200);
             Outing initialOutingFour = new Outing(OutingType.BeerGarden, new DateTime(2018, 01, 15), 80m, 200);
-            Outing initialOutingFive = new Outing(OutingType.Concert, new DateTime(2018, 07, 15), 500m, 200);
+            Outing initialOutingFive = new Outing(OutingType.ConcertEvent, new DateTime(2018, 07, 15), 500m, 200);
             eventList.AddEventToList(initialOuting);
             eventList.AddEventToList(initialOutingTwo);
             eventList.AddEventToList(initialOutingThree);
@@ -82,10 +82,10 @@ namespace Challenge_3_Tests
         {
             //-- Arrange
             Outing initialOuting = new Outing(OutingType.BeerGarden, new DateTime(2018, 04, 15), 15m, 200);
-            Outing initialOutingTwo = new Outing(OutingType.Bowling, new DateTime(2018, 02, 15), 45m, 200);
-            Outing initialOutingThree = new Outing(OutingType.Golf, new DateTime(2018, 06, 15), 250m, 200);
+            Outing initialOutingTwo = new Outing(OutingType.BowlingEvent, new DateTime(2018, 02, 15), 45m, 200);
+            Outing initialOutingThree = new Outing(OutingType.GolfEvent, new DateTime(2018, 06, 15), 250m, 200);
             Outing initialOutingFour = new Outing(OutingType.BeerGarden, new DateTime(2018, 01, 15), 80m, 200);
-            Outing initialOutingFive = new Outing(OutingType.Concert, new DateTime(2018, 07, 15), 500m, 200);
+            Outing initialOutingFive = new Outing(OutingType.ConcertEvent, new DateTime(2018, 07, 15), 500m, 200);
             eventList.AddEventToList(initialOuting);
             eventList.AddEventToList(initialOutingTwo);
             eventList.AddEventToList(initialOutingThree);
