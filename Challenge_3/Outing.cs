@@ -10,8 +10,6 @@ namespace Challenge_3
         {BeerGarden = 1, Bowling = 2, Golf = 3, AmusementPark = 4, Concert = 5};
     public class Outing
     {
-        
-
         public Outing() { }
 
         public Outing(OutingType outing, DateTime eventDate, decimal admissionPrice, int totalPeople)

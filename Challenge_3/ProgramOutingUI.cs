@@ -56,8 +56,17 @@ namespace Challenge_3
 
         private void InitialList()
         {
-            Outing initialOuting = new Outing(OutingType.BeerGarden, new DateTime(2018, 06, 15), 15m, 200);
+            Outing initialOuting = new Outing(OutingType.BeerGarden, new DateTime(2018, 04, 15), 15m, 200);
+            Outing initialOutingTwo = new Outing(OutingType.Bowling, new DateTime(2018, 02, 15), 45m, 200);
+            Outing initialOutingThree = new Outing(OutingType.Golf, new DateTime(2018, 06, 15), 250m, 200);
+            Outing initialOutingFour = new Outing(OutingType.AmusementPark, new DateTime(2018, 01, 15), 80m, 200);
+            Outing initialOutingFive= new Outing(OutingType.Concert, new DateTime(2018, 07, 15), 500m, 200);
+
             eventList.AddEventToList(initialOuting);
+            eventList.AddEventToList(initialOutingTwo);
+            eventList.AddEventToList(initialOutingThree);
+            eventList.AddEventToList(initialOutingFour);
+            eventList.AddEventToList(initialOutingFive);
         }
 
         private void ShowStartMenu()
@@ -168,38 +177,57 @@ namespace Challenge_3
 
             Console.WriteLine("Please enter type of event as number.");
             int newOutingType = Int32.Parse(Console.ReadLine());
+            decimal beer = 0;
+            decimal bowling = 0;
+            decimal golf = 0;
+            decimal amusementPark = 0;
+            decimal concert = 0;
+
             switch (newOutingType)
             {
                 case 1:
                     foreach(var outing in outings)
                     {
                         if (outing.Event == OutingType.BeerGarden)
-                        listEventType.Add(outing);
+                            beer += outing.TotalOutingCost;
                     }
-                    foreach(var outing in outings)
-                    {
-                        if (outing.TotalOutingCost)
-                    }
+                    Console.WriteLine($"Beer: {beer}");
                     break;
 
                 case 2:
-                    string outingTwo = "Bowling";
-                    outingEnum = (OutingType)Enum.Parse(typeof(OutingType), outingTwo);
+                    foreach (var outing in outings)
+                    {
+                        if (outing.Event == OutingType.Bowling)
+                            bowling += outing.TotalOutingCost;
+                    }
+                    Console.WriteLine($"Bowling: {bowling}");
                     break;
 
                 case 3:
-                    string outingThree = "Golf";
-                    outingEnum = (OutingType)Enum.Parse(typeof(OutingType), outingThree);
+                    foreach (var outing in outings)
+                    {
+                        if (outing.Event == OutingType.Golf)
+                            golf += outing.TotalOutingCost;
+                    }
+                    Console.WriteLine($"Golf: {golf}");
                     break;
 
                 case 4:
-                    string outingFour = "AmusementPark";
-                    outingEnum = (OutingType)Enum.Parse(typeof(OutingType), outingFour);
+                    foreach (var outing in outings)
+                    {
+                        if (outing.Event == OutingType.AmusementPark)
+                            amusementPark += outing.TotalOutingCost;
+                    }
+                    Console.WriteLine($"Amusement Park: {amusementPark}");
                     break;
 
                 case 5:
-                    string outingFive = "Concert";
-                    outingEnum = (OutingType)Enum.Parse(typeof(OutingType), outingFive);
+                    foreach (var outing in outings)
+                    {
+                        if (outing.Event == OutingType.Concert)
+                            concert += outing.TotalOutingCost;
+                    }
+                    Console.WriteLine($"Concert: {concert}");
                     break;
             }
         }

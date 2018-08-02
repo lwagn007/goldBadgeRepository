@@ -16,15 +16,6 @@ namespace Challenge_3
             eventList.Add(outing);
         }
 
-        //public List<Outing> FindOuting()
-        //{
-        //    Outing type = new Outing();
-
-        //    if(OutingType.Golf == OutingType.Golf)
-
-        //    return ;
-        //}
-
         public List<Outing> PrintList()
         {
             return eventList;
