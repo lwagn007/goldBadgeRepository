@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Challenge_3
 {
     public enum OutingType : int
-        {BeerGarden = 1, Bowling = 2, Golf = 3, AmusementPark = 4, Concert = 5};
+        {BeerGarden = 1, BowlingEvent = 2, GolfEvent = 3, AmusementPark = 4, ConcertEvent = 5};
     public class Outing
     {
         public Outing() { }

@@ -128,7 +128,7 @@ namespace Challenge_1
 
         private void RemoveItemFromMenuByName()
         {
-            Console.WriteLine("What item would you like to remove?");
+            Console.WriteLine("What item would you like to remove? Please enter meal name.");
             var mealName = Console.ReadLine();
             var item = _menuListRepo.FindItemFromMenu(mealName);
 
